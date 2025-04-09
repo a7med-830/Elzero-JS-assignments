@@ -1,6 +1,11 @@
 import os
-
-num_of_files = int(input("Enter number of files : "))
+while True:
+    try:
+        num_of_files = int(input("Enter number of files : "))
+        break
+    except ValueError:
+        print("Try again")
+    
 folder_name = input("Enter the folder name : ")
 
 if folder_name and not os.path.exists(folder_name):
