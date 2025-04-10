@@ -27,5 +27,13 @@ for i in range(num_of_files):
     except:
         print(f"assign{i+1}.js already exists")
         
+for i in range(num_of_files):
+    try:
+        with open(f"assign{i+1}.html", 'x'):
+            print(f"Created assign{i+1}.html")
+            
+    except:
+        print(f"assign{i+1}.html already exists")
+        
     
 input("Press Enter to exit")
