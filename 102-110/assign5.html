@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+</head>
+<body>
+    <div>10</div>
+    <script>
+        let myDiv = document.querySelector("div");
+        let counter = setInterval(function () {
+            if (myDiv.innerHTML !== "0") {
+                myDiv.innerText -= 1;
+            } else {
+                open("https://Elzero.org","_blank", "width=600,height=600,left=100,top=100");
+                clearInterval(counter);
+            }
+
+        }, "1000")       
+    </script>
+</body>
+</html>
